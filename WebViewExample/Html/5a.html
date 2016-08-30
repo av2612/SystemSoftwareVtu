@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<p><b> Program to evaluate an arithmetic expression involving operators +, -, * and /.  </b></p>
+
+<p><h3>5a.l</h3><pre>%{
+%{
+  #include"y.tab.h"
+  int yylval;
+%}
+
+%%
+[0-9]+ yylval=atoi(yytext); return NUM;
+[\t];
+[\n] 
+. return yytext[0];
+%%
+</pre>
+<h3>5a.y</h3>
+<pre>%{
+  #include<ctype.h>
+  #include<stdio.h>
+%}
+%token NUM
+%left '+''-'
+%left '*''/'
+
+%%
+exp:e {printf("Value of the expression is %d\n",$1);}
+e:e'+'e {$$=$1+$3;}
+e:e'-'e {$$=$1-$3;}
+e:e'*'e {$$=$1*$3;}
+e:e'/'e {if($3==0) printf("Invalid\n"); $$=$1/$3;}
+e:NUM {$$=$1;}
+e:'-'e {$$=-$2;}
+%%
+
+main()
+{
+ printf("Enter the expression\n");
+ yyparse();
+ printf("valid expression\n");
+}
+yyerror()
+{
+ printf("invalid expression\n");
+ exit(0);
+}</pre></p>
+</body>
+</html>

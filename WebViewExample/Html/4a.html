@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<p><b> Program to recognize a valid arithmetic expression that uses operators +, -, * and /. </b></p>
+
+<p><h3>4a.l></h3><pre>%{
+#include"y.tab.h"
+%}
+%%
+[0-9]+ return NUMBER;
+[a-zA-Z] return ID;
+[\t];
+[\n]; 
+. return yytext[0];
+%%
+</pre>
+<h3>4a.y</h3>
+<pre>%{
+#include<stdio.h>
+#include<stdlib.h>
+%}
+%token NUMBER ID
+%left '+''-'
+%left '*''/'
+%left '('')'
+%%
+e:e'+'e|e'-'e|e'*'e|e'/'e|'('e')'|NUMBER|ID;
+%%
+main()
+{
+ printf("Enter the expression\n");
+ yyparse();
+ printf("valid expression\n");
+}
+yyerror()
+{
+ printf("invalid expression\n");
+ exit(0);
+}</pre></p>
+</body>
+</html>

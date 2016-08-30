@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DEFAULT</Machine>
+    <WindowsUser>shiva7071</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>2c8e71bd-181b-48c9-afba-3867e69cf936</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\bin\Debug\WebViewExample.exe">
+      <PackagePath>WebViewExample.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Assets\1a.txt">
+      <PackagePath>Assets\1a.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\10.txt">
+      <PackagePath>Html\10.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\11.txt">
+      <PackagePath>Html\11.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\12.txt">
+      <PackagePath>Html\12.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\1a.txt">
+      <PackagePath>Html\1a.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\1b.txt">
+      <PackagePath>Html\1b.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\2a.txt">
+      <PackagePath>Html\2a.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\2b.txt">
+      <PackagePath>Html\2b.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\3.txt">
+      <PackagePath>Html\3.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\4a.txt">
+      <PackagePath>Html\4a.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\4b.txt">
+      <PackagePath>Html\4b.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\5a.txt">
+      <PackagePath>Html\5a.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\5b.txt">
+      <PackagePath>Html\5b.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\6.txt">
+      <PackagePath>Html\6.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\7a.txt">
+      <PackagePath>Html\7a.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\7b.txt">
+      <PackagePath>Html\7b.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\8a.txt">
+      <PackagePath>Html\8a.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\8b.txt">
+      <PackagePath>Html\8b.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\9a.txt">
+      <PackagePath>Html\9a.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\9b.txt">
+      <PackagePath>Html\9b.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\css\phone.css">
+      <PackagePath>Html\css\phone.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\index.html">
+      <PackagePath>Html\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\os.html">
+      <PackagePath>Html\os.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\Html\yacc.html">
+      <PackagePath>Html\yacc.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\bin\Debug\WebViewExample.xr.xml">
+      <PackagePath>WebViewExample.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anil\Documents\Visual Studio 2015\Projects\WebViewExample\WebViewExample\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

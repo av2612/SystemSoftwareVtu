@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<p><b>  Program to recognize the grammar (anb, n>= 10).  </b></p>
+
+<p><h3>6.l</h3><pre>%{
+#include"y.tab.h"
+%}
+
+%%
+a return A;
+b return B;
+[\t];
+[\n];
+. return yytext[0];
+%%
+</pre>
+<h3>6.y</h3>
+<pre>%token A B
+%%
+S:X B
+X:A A A A A A A A A A T;
+T:T A |;
+%%
+main()
+{
+ printf("Enter the string\n");
+ yyparse();
+ printf("Valid\n");
+}
+ yyerror()
+{
+ printf("Invalid\n");
+ exit(0);
+}
+</pre></p>
+</body>
+</html>

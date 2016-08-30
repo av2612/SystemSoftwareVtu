@@ -1,0 +1,78 @@
+4.   a) Program to recognize a valid arithmetic expression that uses operators +, -, * and /.
+lex
+
+%{
+
+/* 4a.l */
+
+#include "y.tab.h"
+
+%}
+
+%%
+
+[0-9]+(\.[0-9]+)?        { return NUM;}
+
+[a-zA-Z][_a-zA-Z0-9]*          { return ID; } [\t]                               ;
+\n                                return 0;
+
+.                                   return yytext[0];
+
+%%
+
+
+
+yacc
+
+%{
+
+#include<stdio.h>
+
+%}
+
+%token NUM ID
+
+%left '+' '-'
+
+%left '*' '/'
+
+%%
+
+e : e '+' e
+
+|  e '-' e
+
+|  e '*' e
+
+|  e '/' e
+
+|   '('e')'
+
+| NUM
+
+| ID         ;
+
+%% 
+main()
+
+{
+
+printf(" Type the Expression & Press Enter key\n");
+
+yyparse();
+
+printf(" Valid Expression \n");
+
+}
+
+yyerror()
+
+{
+
+printf(" Invalid Expresion!!!!\n");
+
+exit(0);
+
+}
+
+

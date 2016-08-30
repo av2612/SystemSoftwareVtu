@@ -1,0 +1,92 @@
+6.   Program to recognize the grammar (anb, n>= 10).
+
+
+ 
+lex
+
+%{
+
+
+
+%}
+
+%%
+ 
+
+
+
+
+#include"y.tab.h" 
+
+a          return A;
+
+b          return B;
+
+[0-9]   {yylval=atoi(yytext);return NUM;}
+
+\t         ;
+
+.           return yytext[0];
+
+\n        return 0;
+
+%%
+
+
+ 
+yacc
+
+%{
+
+
+
+
+
+%}
+ 
+
+
+
+
+#include<stdio.h>
+
+int na=0,nb=0,f=1; 
+
+%token A B NUM
+
+%%
+
+VAR:   A        {na++;}
+
+|B        {nb++;}
+
+|VAR A          {na++;}
+
+|VAR B           {nb++;}
+
+|NUM {f=0;}
+
+|VAR NUM {f=0;}
+
+;
+
+%%
+
+main() 
+{
+
+yyparse();
+
+if(na>=10 && nb==1 && f==1)
+
+printf("Valid"); 
+
+else
+
+printf("Invalid"); 
+}
+
+
+
+
+

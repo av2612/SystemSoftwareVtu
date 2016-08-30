@@ -1,0 +1,72 @@
+b) C program to do the following: Using fork( ) create a child process. The child process prints its own process-id and id of its parent and then exits. The parent process waits for its child to finish (by executing the wait( )) and prints its own process-id and the id of its child process and then exits.
+
+
+
+#include <stdio.h>
+
+
+#include <stdlib.h>
+
+
+#include <unistd.h>
+
+
+int main()
+
+
+{
+
+
+pid_t cpid,ppid,pid;
+
+
+if((pid=fork())<0)
+
+
+{
+
+
+printf("Fork error");
+
+
+exit(0);
+
+
+}
+
+
+if(pid==0)
+
+
+{
+
+
+printf("\n I am Child");
+
+
+printf("\n My id is %d", getpid()); printf("\n My parent id is %d", getppid()); exit(0); 
+}
+
+
+else
+
+
+{
+
+
+wait();
+
+
+printf("\n I am Parent");
+
+
+printf("\n My id is %d", getpid());
+
+
+printf("\n My child id is %d\n", pid);
+
+
+}
+
+
+}

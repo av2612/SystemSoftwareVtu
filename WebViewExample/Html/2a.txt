@@ -1,0 +1,74 @@
+2.   a) Program to recognize a valid arithmetic expression and to recognize the identifiers
+
+and operators present. Print them separately.
+
+
+
+%{
+
+#include <stdio.h>
+
+int count=0;
+
+char ch;
+
+%}
+
+
+
+%%
+
+"int "|"char "|"float "|"double " { while(1)
+
+{
+
+ch=input(); if(ch==',') count++;
+else if(ch==';')
+
+{ 
+
+
+
+
+
+
+
+}
+
+}
+
+.|\n ;
+
+%%
+ 
+
+count++;
+
+break;
+
+} 
+
+int main(int argc,char *argv[])
+
+{
+
+if(argc!=2)
+
+{
+
+printf("Invalid number of arguments!\n");
+
+return 1;
+
+} 
+yyin=fopen(argv[1],"r");
+
+yylex();
+
+printf("Number of identifiers : %d\n",count);
+
+return 0;
+
+}
+
+

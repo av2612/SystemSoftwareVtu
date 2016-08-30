@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<p><b>Program to recognize and count the number of identifiers in a given input file.   </b></p>
+<p><pre>%{
+#include<stdio.h>
+int count=0,flag=0;
+%}
+
+%%
+"int "|"float"|"char"|"long" {flag=1;}
+","|","|";" {if(flag) count++;}
+%%
+int main(int arg,char*argv[])
+{
+ yyin=fopen(argv[1],"r");
+ yylex();
+ printf("No of identifiers=%d\n",count);
+}</pre></p>
+</body>
+</html>
